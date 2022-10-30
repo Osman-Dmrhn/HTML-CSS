@@ -88,33 +88,43 @@
             }
             #menu3{
                 float: left;
-                margin: 10px 0px 0px 10px ;
-                border: 1px dotted black;
-                width: 150px;
-                height: 205px;
-                background-color:darkred;
+                width: 200px;
+                background-color:darkcyan;
+                height: 200px;
             }
             #menu3 ul{
                 list-style: none;
+                padding:0px;
                 margin: 0px;
-                padding: 0px;
             }
             #menu3 ul li{
-                width: 150px;
-                height: 40px;
-                margin: 0px 0px 0px 0px;
-                padding: 0px 0px 0px 0px;
+                position: relative;
             }
             #menu3 ul li a{
-                width: 148px;
-                height: 40px;
-                display: block ;
-                padding: 5px 0px 0px 2px;
+                width: 193px;
+                height: 33px;
+                display: block;
+                border: 1px solid  black;
+                color: azure;
                 text-decoration: none;
-                color: bisque;
+                padding: 5px 0px 0px 5px ;
             }
             #menu3 ul li a:hover{
-                background-color: crimson;
+                display: block;
+               background-color:darkslateblue;
+            }
+            #menu3 ul li ul{
+                display: none;
+            }
+            #menu3 ul li:hover ul{
+                display: block;
+                position:absolute;
+                width: 200px;
+                border: 1px solid black;
+                background-color: darkslateblue;
+                left: 200px;
+                top: 0px;
+                text-align: center;
             }
             #menu4{
                 float: left;
@@ -122,7 +132,7 @@
                 width: 500px;
                 height: 30px;
                 background-color: darkred;
-                margin: 10px;
+                margin: 50px 0px 0px 0px;
             }
             #menu4 ul{
                 list-style: none;
@@ -157,41 +167,55 @@
                 <li><a href="">İletişim</a></li>
             </ul>
         </div>
+        <div id="menu1">
+            <ul>
+                <li><a href="">Anasayfa</a></li>
+                <li><a href="">Hakkımızda</a></li>
+                <li><a href="">Ürünler</a></li>
+                <li><a href="">Galeri</a></li>
+                <li><a href="">İletişim</a></li>
+            </ul>
+        </div>
+        <div id="menu2">
+            <ul>
+                <li><a href="">Anasayfa</a></li>
+                <li><a href="">Hakkımızda</a></li>
+                <li><a href="">Ürünler</a></li>
+                <li><a href="">Galeri</a></li>
+                <li><a href="">İletişim</a></li>
+            </ul>
+        </div>
+        <div id="menu3">
+            <ul>
+                <li><a href="">Anasayfa</a></li>
+                <li><a href="">Hakkımızda</a>
+                <ul>
+                    <li><a href="">Şirket</a></li>
+                    <li><a href="">Tarihçesi</a></li>
+                    <li><a href="">Çalışanlarımız</a></li>
+                    <li><a href="">Faliyetler</a></li>
+                </ul>
+                </li>
+                <li><a href="">Hizmetlerimiz</a>
+                <ul>
+                    <li><a href="">Web</a></li>
+                    <li><a href="">Tasarım</a></li>
+                    <li><a href="">Danışmanlık</a></li>
+                    <li><a href="">Logo</a></li>
+                </ul>
+                </li>
+                <li><a href="">Referanslarımız</a></li>
+                <li><a href="">İletişim</a></li>
+            </ul>
+        </div>
+        <div id="menu4">
+            <ul>
+                <li><a href="">Anasayfa</a></li>
+                <li><a href="">Hakkımızda</a></li>
+                <li><a href="">Ürünler</a></li>
+                <li><a href="">Galeri</a></li>
+                <li><a href="">İletişim</a></li>
+            </ul>
+        </div>
     </body>
-    <div id="menu1">
-        <ul>
-            <li><a href="">Anasayfa</a></li>
-            <li><a href="">Hakkımızda</a></li>
-            <li><a href="">Ürünler</a></li>
-            <li><a href="">Galeri</a></li>
-            <li><a href="">İletişim</a></li>
-        </ul>
-    </div>
-    <div id="menu2">
-        <ul>
-            <li><a href="">Anasayfa</a></li>
-            <li><a href="">Hakkımızda</a></li>
-            <li><a href="">Ürünler</a></li>
-            <li><a href="">Galeri</a></li>
-            <li><a href="">İletişim</a></li>
-        </ul>
-    </div>
-    <div id="menu3">
-        <ul>
-            <li><a href="">Anasayfa</a></li>
-            <li><a href="">Hakkımızda</a></li>
-            <li><a href="">Ürünler</a></li>
-            <li><a href="">Galeri</a></li>
-            <li><a href="">İletişim</a></li>
-        </ul>
-    </div>
-    <div id="menu4">
-        <ul>
-            <li><a href="">Anasayfa</a></li>
-            <li><a href="">Hakkımızda</a></li>
-            <li><a href="">Ürünler</a></li>
-            <li><a href="">Galeri</a></li>
-            <li><a href="">İletişim</a></li>
-        </ul>
-    </div>
 </html>
