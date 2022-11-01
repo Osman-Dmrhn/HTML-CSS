@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head lang="tr">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="">
+        <style>
+            body{
+                background: url(images/bg.gif)
+            }
+            #container{
+                float: left;
+                margin: 30px auto;
+                width: 821px;
+                min-height: auto;
+                margin: 0px auto;
+                background:#e9e5e2;
+            }
+            #logo{
+                width: 229px;
+                height: 100px;
+            }
+            #menu{
+                float: left;
+                width: 821px;
+                height: 42px;
+                background: url(images/menu_bg.gif);
+            }
+            #menu ul{
+                margin: 0px;
+                padding: 0px;
+                list-style:none;
+            }
+            #menu ul li{
+                float: left;
+            }
+            #menu ul li a{
+                display: block;
+                text-align: center;
+                padding: 10px 10px 15px 10px;
+                color: black;
+                text-decoration: none;
+            }
+            #menu ul li a#home{
+                background: url(images/menu_bullet.gif) center bottom no-repeat;
+            }
+            #menu ul li a:hover{
+                background: url(images/menu_bullet.gif) center bottom no-repeat;
+            }
+            #solorta{
+                float: left;
+                margin: 0px;
+                width: 500px;
+                height: 730px;
+            }
+            #sagorta{
+                float: left;
+                margin: 0px 0px 0px 0px ;
+                width: 321px;
+                height: 730px;
+            }
+            #orta1{
+                margin: 20px;
+            }
+            #free{
+                font:bold 23px tahoma;
+                color: chocolate;
+            }
+            #host{
+                margin: 0px 0px 0px 10px;
+                color:cornflowerblue;
+                font:17px tahoma;
+            }
+            #orta1panel{
+                width: 442px;
+                height: 177px;
+                background: url(images/welcome_box.gif) no-repeat;
+                padding: 25px 40px 0px 25px;
+                font: 13px verdana;
+            }
+            #yazi1{
+                color: chocolate;
+            }
+            #read{
+                width: 83px;
+                height: 23px;
+                background: url(images/read_more_bg.gif) no-repeat;
+                float: right;
+                position: relative;
+                top: 40px;
+                right: 30px;
+                padding: 5px 0px 0px 21px;
+                color: white;
+                font: 10px verdana;
+            }
+            #read a {
+                text-decoration: none;
+                color: wheat;
+            }
+            #read a:hover{
+                color: brown;
+            }
+            #orta2{
+                margin: 0px 0px 0px 40px;
+            }
+            #orta2 h3{
+                padding: 0px 0px 0px 0px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 12px;
+            }
+            #orta2 ul{
+                margin: 0px;
+                padding: 0px;
+            }
+            #orta2 ul li{
+                display:block;
+                width: 402px;
+                height: 21px;
+                background:url(images/bullet_list.gif) no-repeat;
+                padding: 4px 0px 0px 8px;
+                font-family: verdana;
+                font-size: 11px;
+            }
+            .yazi3{
+                font:bold 11px verdana;
+                padding: 0px 10px 0px 0px;
+            }
+            #orta3{
+                margin: 65px 0px 0px 40px;
+                width: 401px;
+                height: 300px;
+                font:11px  verdana;
+            }
+            #orta3 h3{
+                font:bold 15px  verdana;
+                padding: 0px 0px 0px 0px;
+            }
+            .news{
+                width: 50px;
+                height: 50px;
+                float: left;
+            }
+            .yazi4{
+                font:bold 11px  verdana;
+                padding: 0px 0px 0px 0px;
+            }
+            #tdbox{
+                width: 187px;
+                height: 265px;
+                margin: 10px 0px 0px 82px;
+            }
+            #orta5{
+                font: 16px  vertana;
+                width:288px;
+                height: 159px;
+                margin: 0px 0px 0px 20px;
+                padding:30px 0px 0px 30px;
+                background:url(images/text_box.gif) no-repeat;
+            }
+            #client{
+                margin: -10px;
+            }
+            .user{
+               font: 13px vertana;
+            }
+            #button{
+                width: 83px;
+                height: 24px;
+                border: 0px;
+                padding: 0px;
+                margin: 0px;
+                background: url(images/login.gif) no-repeat;
+            }
+            #test{
+                font:bold 15px  verdana;
+                margin:0px 0px 0px 20px;
+            }
+            #orta6{
+                height:119px;
+                width:248px;
+                margin: 10px 0px 0px 20px;
+                padding: 20px 20px 20px 20px;
+                background: url(images/text_box.gif);
+            }
+            #orta6text{
+                margin: 20px;
+            }
+            #alt{
+                float: left;
+                width: 821px;
+                height:50px;
+                font:9px verdana;
+                background: url(images/bg.gif);
+                color: slategrey;
+            }
+            #altmenu ul{
+                margin: 0px 0px 0px 20px;
+                padding: 0px;
+                list-style: none;
+            }
+            #altmenu ul li{
+                padding: 20px 0px 20px 0px;
+                float: left;
+            }
+            #altmenu ul li a{
+                text-decoration: none;
+                color: slategrey;
+            }
+            #altsag{
+                width: 176px;
+                height: 27px;
+                margin-left: 640px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="logo"><img src="images/logo.gif"alt=""></div>
+        <div id="container">
+        <div id="menu">
+            <ul>
+                <li><a id="home" href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Demo</a></li>
+                <li><a href="">License</a></li>
+                <li><a href="">Modules</a></li>
+                <li><a href="">Themes</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div id="solorta">
+            <div id="orta1">
+                <img src="images/checked.gif" alt="checked">
+                <span id="host"><span id="free">Free </span>Hosting Control Panel</span>
+                <div id="orta1panel">
+                 <span id="yazi1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                 Nullam nec velit dignissim, sollicitudin elit nec, tempus turpis. Nullam accumsan sapien sed erat aliquet, id interdum diam congue. Etiam ornare tortor et dignissim mattis. Sed aliquam nulla ut nisl rhoncus egestas. Etiam pulvinar quam eu tempus lacinia. Sed sapien erat, placerat eget pulvinar a, commodo et velit.
+                 <div id="read"><a href="">Read More.</a></div>
+                </div>
+            </div>
+            <div id="orta2">
+                <h3>Main Features</h3>
+             <ul>
+                <li><span class="yazi3">1</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li><span class="yazi3">2</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li><span class="yazi3">3</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li><span class="yazi3">4</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+             </ul>
+            </div>
+            <div id="orta3">
+                <h3>Lastest News</h3>
+                <div class="news"><a href=""><img src="images/news_icon.gif" alt=""></a></div><span class="yazi4"> Quisque non iaculis felis. Vestibulum blandit nisi massa, at pellentesque ipsum dapibus at. Curabitur ullamcorper mi sit amet lacus tincidunt, et imperdiet justo porta. Etiam accumsan nisi sem, et sodales massa sagittis <br><br></span>
+                <div class="news"><a href=""><img src="images/news_icon.gif" alt=""></a></div><span class="yazi4">Quisque non iaculis felis. Vestibulum blandit nisi massa, at pellentesque ipsum dapibus at. Curabitur ullamcorper mi sit amet lacus tincidunt, et imperdiet justo porta. Etiam accumsan nisi sem, et sodales massa sagittis ac.</span>
+            </div>
+        </div>
+        <div id="sagorta">
+                <div id="tdbox"><img src="images/3dbox.gif" alt="3dbox"></div>
+                <div id="orta5">
+                    <div id="giris">
+                            <table>
+                                <tr><td colspan="2"><span id="client">Clients Login</span></td></tr>
+                                <tr><td align="right"><span class="user">Username:</span></td><td><input type="text" id="username" name="" class="metinkutusu"></td></tr>
+                                <tr><td align="right"><span class="user">Password:</span></td><td><input type="text" id="password" name="" class="metinkutusu"></td></tr>
+                                <tr><td></td><td colspan="2" align="right"><input type="button" id="button"></td></tr>
+                            </table>
+                    </div>
+                </div>
+                <span id="test">Testimonials</span>  
+                <div id="orta6"><span id="orta6text">"Quisque non iaculis felis. Vestibulum blandit nisi massa, at pellentesque ipsum dapibus at. Curabitur ullamcorper mi sit amet lacus tincidunt, et imperdiet justo porta. Etiam accumsan nisi sem, et sodales massa sagittis"</span></div>      
+        </div>
+        <div id="alt">
+            <div id="altmenu">
+                 <ul>
+                     <li><a href="">Home</a>-</li>
+                     <li><a href="">About</a>-</li>
+                     <li><a href="">Privacy Policy</a>-</li>
+                     <li><a href="">Contact</a></li>
+                 </ul>
+            </div>
+             <div id="altsag"><img src="images/csstemplatesmarket.gif" alt="csstemplatesmarket"></div>
+         </div>
+    </div>
+    </body>
+</html>
